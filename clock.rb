@@ -12,6 +12,7 @@ module Clockwork
   #   puts "Running #{job}, at #{time}"
   # end
 
+  # this where i configure the interval for posting tweets
   every(3.hour, 'ArtBot posting tweet rn.') {ArtBot.run}
   # every(3.minutes, 'less.frequent.job')
   # every(1.hour, 'hourly.job')
